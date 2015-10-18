@@ -1,0 +1,10 @@
+@import '../common.css';
+
+.hero {
+  background-color: lightgreen; /* darkBgColor */
+  height: 500px;
+  padding: 30px;
+}
+.hero * {
+  color: #F5F5F5; /* lightTextColor */
+}
