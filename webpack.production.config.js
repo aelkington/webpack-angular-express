@@ -62,7 +62,7 @@ module.exports = {
             modules: false
         })
     ],
-    
+
     module: {
         loaders: [
             // transpile ES6 -> ES5
