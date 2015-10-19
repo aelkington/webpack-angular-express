@@ -12,7 +12,7 @@
   "scripts": {
     "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "dev": "LOCAL_DEV=true NODE_ENV=development node server",
-    "serve": "NODE_ENV=production node server"
+    "start": "NODE_ENV=production node server"
   },
   "dependencies": {
     "angular": "^1.4.7",
