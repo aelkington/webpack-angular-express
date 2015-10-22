@@ -8,11 +8,11 @@ import AppComponent from './app.component';
 import 'normalize.css';
 
 let appModule = angular.module('app', [
-    'ui.router',
-    Common.name,
-    Components.name
+  'ui.router',
+  Common.name,
+  Components.name
 ])
-    .directive('app', AppComponent);
+  .directive('app', AppComponent);
 
 /*
  * As we are using ES6 with Angular 1.x we can't use ng-app directive
@@ -20,7 +20,7 @@ let appModule = angular.module('app', [
  * Instead, we need to bootstrap the application manually
  */
 angular.element(document).ready(()=> {
-    angular.bootstrap(document, [appModule.name], {strictDi: false});
+  angular.bootstrap(document, [appModule.name], {strictDi: false});
 });
 
 export default appModule;

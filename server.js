@@ -1,7 +1,7 @@
 var path = require('path'),
-    express = require('express'),
-    environment = require('./server/config/environment'),
-    config = require('./server/config/settings');
+  express = require('express'),
+  environment = require('./server/config/environment'),
+  config = require('./server/config/settings');
 
 const app = express();
 

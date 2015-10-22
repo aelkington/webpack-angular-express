@@ -5,15 +5,15 @@ import 'angular-ui-router';
 import homeComponent from './home.component';
 
 let homeModule = angular.module('home', [
-    'ui.router'
+  'ui.router'
 ]).config(($stateProvider, $urlRouterProvider)=> {
-    $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/');
 
-    $stateProvider
-        .state('home', {
-            url: '/',
-            template: '<home></home>'
-        });
+  $stateProvider
+    .state('home', {
+      url: '/',
+      template: '<home></home>'
+    });
 }).directive('home', homeComponent);
 
 export default homeModule;

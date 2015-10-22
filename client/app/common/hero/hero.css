@@ -5,6 +5,7 @@
   height: 500px;
   padding: 30px;
 }
+
 .hero * {
   color: #F5F5F5; /* lightTextColor */
 }

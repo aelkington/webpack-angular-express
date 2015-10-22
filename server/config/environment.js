@@ -5,19 +5,19 @@
  */
 
 var config = require('./settings'),
-    webpackDevServer = require('../webpackDevServer');
+  webpackDevServer = require('../webpackDevServer');
 
-module.exports = function(app, express, webroot){
-    var env = process.env.NODE_ENV || 'development';
+module.exports = function (app, express, webroot) {
+  var env = process.env.NODE_ENV || 'development';
 
-    // start development server. This will only start if you are doing local development 'npm run dev'
-    if(config.isDeveloping){
-        webpackDevServer(app);
-    }
+  // start development server. This will only start if you are doing local development 'npm run dev'
+  if (config.isDeveloping) {
+    webpackDevServer(app);
+  }
 
-    // serve distribution folder
-    if(env === 'production'){
-        app.use(express.static(webroot + '/dist'));
-    }
+  // serve distribution folder
+  if (env === 'production') {
+    app.use(express.static(webroot + '/dist'));
+  }
 
 };
