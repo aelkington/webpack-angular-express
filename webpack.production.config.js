@@ -75,7 +75,10 @@ module.exports = {
       {test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css!postcss')},
 
       // load HTML files into angular template cache
-      {test: /\.html$/, loader: 'ng-cache?prefix=[dir]/[dir]'}
+      {test: /\.html$/, loader: 'ng-cache?prefix=[dir]/[dir]'},
+
+      // loader for images. Inline base64 URLs for images less than 8k, but use direct URLs for the rest
+      {test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192'}
     ]
   },
 

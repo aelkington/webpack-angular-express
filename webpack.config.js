@@ -71,7 +71,11 @@ module.exports = {
       {test: /\.css$/, loader: 'style!css'},
 
       // loader for HTML files
-      {test: /\.html$/, loader: 'html-loader'}
+      {test: /\.html$/, loader: 'html-loader'},
+
+      // loader for images. Inline base64 URLs for images less than 8k, but use direct URLs for the rest
+      {test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192'}
+
     ]
   }
 };
