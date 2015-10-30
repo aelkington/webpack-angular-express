@@ -1,6 +1,14 @@
 <navbar></navbar>
-<h1>{{ vm.name }}</h1>
-<section>
-  <p>This is the about nothing page! Remove me if you don't need me please</p>
-  <img src="../../../static/images/baby-duck.jpg">
-</section>
+<div class="about content-container">
+  <h1>About</h1>
+  <div>Notice that this page is missing the header component.  You can include/exclude components for each page.</div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">A baby duck</div>
+    <div class="panel-body">
+      <img src="../../../static/images/baby-duck.jpg" height="200">
+    </div>
+  </div>
+
+  <div><i>You can find me in {{ vm.name }}.html.</i></div>
+</div>

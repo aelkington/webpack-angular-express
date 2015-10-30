@@ -1,8 +1,9 @@
-<nav class="navbar">
-  <div class="logo">
-    <h1><a ui-sref="home">{{ vm.name }}</a></h1>
-  </div>
-  <div class="nav-links">
-    <span><a ui-sref="about">about</a></span>
-  </div>
-</nav>
+<div class="site-navbar">
+  <div class="pull-right"><i>You can find me in {{ vm.name }}.html.</i></div>
+  <ul class="nav nav-pills ">
+    <li role="presentation" ui-sref-active="active"><a href="/#/" ui-sref="home" target="_self">Home</a></li>
+    <li role="presentation" ui-sref-active="active"><a href="/#/about" ui-sref="about" target="_self">About</a></li>
+    <li role="presentation" ui-sref-active="active"><a href="/section2#/contact" ui-sref="contact" target="_self">Contact</a></li>
+  </ul>
+</div>
+
