@@ -8,6 +8,9 @@ const app = express();
 // Application middleware and environment configuration
 environment(app, express, __dirname);
 
+// routes
+app.use('/cars', require('./server/routes/cars'));
+
 // start node server and listen for requests
 app.listen(config.port, 'localhost', function onStart(err) {
   if (err) {

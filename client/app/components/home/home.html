@@ -4,4 +4,10 @@
 <div class="content-container">
   <h1>Welcome</h1>
   <div><i>You can find me in {{ vm.name }}.html.</i></div>
+  <br><br><br>
+  <div>The list below was an API request at <i>/cars/brands</i></div>
+  <ul>
+    <li ng-repeat="brand in vm.carBrands">{{brand}}</li>
+  </ul>
+
 </div>
