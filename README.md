@@ -11,8 +11,7 @@ Once you have these, install the following as globals:
 `npm install -g karma karma-cli webpack`
 
 ## Installing
-* `fork` this repo
-* `clone` your fork
+* `clone` this repo
 * `npm install` to install dependencies
 
 ## Running the Application
