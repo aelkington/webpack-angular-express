@@ -18,7 +18,7 @@ Once you have these, install the following as globals:
 ## Running the Application
 * `npm run dev` to start the app in development mode
 * `npm run build` to bundle your code into the `dist` folder
-* `npm start` to start Express sever in production mode and serve bundles files in the `dist` folder
+* `npm start` to start Express sever in production mode and serve bundled files in the `dist` folder
 
 ## Testing the Application
 * `npm run test` will use [Karma](http://karma-runner.github.io) and execute tests found in every `*.spec.js` file.
