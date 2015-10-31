@@ -3,13 +3,6 @@ A skeleton application written using Angular (1.x), Express, and Webpack.
 
 This sample application is based on [NG6-starter](https://github.com/AngularClass/NG6-starter/tree/master) and extends it by implementing [Express](http://expressjs.com) as a proxy with [Webpack](https://webpack.github.io).
 
-# Table of Contents
-* [Getting Started](#getting-started)
-    * [Dependencies](#dependencies)
-    * [Installing](#installing)
-    * [Running the Application](#running-the-app)
-    * [Testing the Application](#testing)	
-
 # Getting Started
 ## Dependencies
 Tools needed to run this app:
