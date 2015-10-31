@@ -1,8 +1,9 @@
 {
   "name": "webpack-angular-express",
   "version": "0.0.1",
-  "description": "A seed application that uses webpack with angular and express",
-  "author": "Andy Elkington",
+  "description": "A seed application that uses webpack, angular, and express",
+  "author": "aelkington",
+  "private": true,
   "license": "MIT",
   "main": "server.js",
   "repository": {
