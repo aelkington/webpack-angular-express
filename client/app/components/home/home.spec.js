@@ -11,12 +11,14 @@ import HomeTemplate from './home.html';
 
 describe('Home', ()=> {
   let $rootScope,
+    $http,
     makeController;
 
   beforeEach(angular.mock.module(HomeModule.name));
-  beforeEach(angular.mock.inject((_$rootScope_)=> {
+  beforeEach(angular.mock.inject((_$rootScope_, _$http_)=> {
     $rootScope = _$rootScope_;
-    makeController = ()=> new HomeController();
+    $http = _$http_;
+    makeController = ()=> new HomeController($http);
   }));
 
   describe('Module', ()=> {
