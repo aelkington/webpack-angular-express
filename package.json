@@ -11,7 +11,7 @@
     "url": ""
   },
   "scripts": {
-    "build": "rimraf dist && webpack -p --config ./webpack.production.config.js --progress --profile --colors",
+    "build": "rimraf dist && webpack --config ./webpack.production.config.js --progress --profile --colors",
     "dev": "node server --localDev=true",
     "start": "node server",
     "test": "karma start"
