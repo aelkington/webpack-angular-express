@@ -92,7 +92,7 @@ module.exports = {
       {test: /\.html$/, loader: 'html-loader'},
 
       // loader for images. Inline base64 URLs for images less than 8k, but use direct URLs for the rest
-      {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/, loader: 'url-loader?limit=8192'}
+      {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/, loader: 'url-loader?limit=8192&name=img/img-[hash:6].[ext]'}
 
     ]
   }

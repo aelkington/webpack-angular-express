@@ -1,5 +1,7 @@
+var argv = require('yargs').argv;
+
 var config = {
-  isDeveloping: (process.env.LOCAL_DEV === 'true' && process.env.NODE_ENV !== 'production'),
+  isDeveloping: (argv.hasOwnProperty('localDev') && argv.localDev === 'true' && process.env.NODE_ENV !== 'production'),
   port: 3000
 };
 

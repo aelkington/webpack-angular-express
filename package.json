@@ -11,9 +11,9 @@
     "url": ""
   },
   "scripts": {
-    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "dev": "LOCAL_DEV=true NODE_ENV=development node server",
-    "start": "NODE_ENV=production node server",
+    "build": "rimraf dist && webpack -p --config ./webpack.production.config.js --progress --profile --colors",
+    "dev": "node server --localDev=true",
+    "start": "node server",
     "test": "karma start"
   },
   "dependencies": {
@@ -23,7 +23,8 @@
     "bootstrap": "^3.3.5",
     "express": "^4.13.3",
     "jquery": "^2.1.4",
-    "normalize.css": "^3.0.3"
+    "normalize.css": "^3.0.3",
+    "yargs": "^3.29.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.7",

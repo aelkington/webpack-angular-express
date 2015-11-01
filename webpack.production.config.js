@@ -34,6 +34,11 @@ module.exports = {
   },
 
   plugins: [
+
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: '"production"' }
+    }),
+
     // automatically inject dependencies for minification
     new ngAnnotatePlugin({add: true}),
 
@@ -95,7 +100,7 @@ module.exports = {
       {test: /\.html$/, loader: 'ng-cache?prefix=[dir]/[dir]'},
 
       // loader for images. Inline base64 URLs for images less than 8k, but use direct URLs for the rest
-      {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/, loader: 'url-loader?limit=8192'}
+      {test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/, loader: 'url-loader?limit=8192&name=img/img-[hash:6].[ext]'}
     ]
   },
 
